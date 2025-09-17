@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Canvas Drawing with Undo/Redo and Eraser</title>
+  <link rel="stylesheet" href="styleq.css" />
+</head>
+<body>  
+  <div class="toolbar">
+    <button id="draw-btn" class="active">Draw</button>
+    <button id="erase-btn">Erase</button>
+    <button id="undo-btn" disabled>Undo</button>
+    <button id="redo-btn" disabled>Redo</button>
+    <label for="color-picker">Color:</label>
+    <input type="color" id="color-picker" value="#000000" />
+    <label for="brush-size">Brush Size:</label>
+    <input type="range" id="brush-size" min="1" max="50" value="5" />
+  </div>
+  <canvas id="canvas"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
